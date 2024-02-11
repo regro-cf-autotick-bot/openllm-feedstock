@@ -71,3 +71,5 @@ about:
 extra:
   recipe-maintainers:
     - rxm7706
+    - conda-forge/openllm-client
+    - conda-forge/openllm-core
