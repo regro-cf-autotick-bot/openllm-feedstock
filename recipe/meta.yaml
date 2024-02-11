@@ -34,8 +34,8 @@ requirements:
     - python
     - bentoml >=1.1.10
     - transformers >=4.35.0
-    - openllm-client >=0.4.31
-    - openllm-core >=0.4.31
+    - openllm-client >={{ version }}
+    - openllm-core >={{ version }}
     - safetensors
     - optimum >=1.12.0
     - accelerate
