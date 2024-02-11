@@ -1,5 +1,5 @@
 {% set name = "openllm" %}
-{% set version = "0.4.31" %}
+{% set version = "0.4.44" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openllm-{{ version }}.tar.gz
-  sha256: cd2850a6c46b8f801325265a8b7e91ee193a8acfb848deccb7efc6273ee91895
+  sha256: b1063f19a41479464102222b31ef240bf1a6c9557c8e0cfa24959b2c4c10bb34
 
 build:
   skip: true  # [win or osx]
@@ -21,7 +21,7 @@ build:
     - openllm-list-models = openllm_cli.extension.list_models:cli
     - openllm-playground = openllm_cli.extension.playground:cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -32,10 +32,10 @@ requirements:
     - pip
   run:
     - python
-    - bentoml >=1.1.10
-    - transformers >=4.35.0
-    - openllm-client >=0.4.31
-    - openllm-core >=0.4.31
+    - bentoml >=1.1.11,<1.2
+    - transformers >=4.36.0
+    - openllm-client >={{ version }}
+    - openllm-core >={{ version }}
     - safetensors
     - optimum >=1.12.0
     - accelerate
