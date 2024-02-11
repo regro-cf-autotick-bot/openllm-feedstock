@@ -21,7 +21,7 @@ build:
     - openllm-list-models = openllm_cli.extension.list_models:cli
     - openllm-playground = openllm_cli.extension.playground:cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
