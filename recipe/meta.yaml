@@ -32,8 +32,8 @@ requirements:
     - pip
   run:
     - python
-    - bentoml >=1.1.10
-    - transformers >=4.35.0
+    - bentoml >=1.1.11,<1.2
+    - transformers >=4.36.0
     - openllm-client >={{ version }}
     - openllm-core >={{ version }}
     - safetensors
