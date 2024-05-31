@@ -7,7 +7,7 @@ Home: https://github.com/bentoml/OpenLLM
 
 Package license: Apache-2.0
 
-Summary: OpenLLM: Operating LLMs in production
+Summary: OpenLLM: Run any open-source LLMs, such as Llama 2, Mistral, as OpenAI compatible API endpoint in the cloud.
 
 Current build status
 ====================
