@@ -14,13 +14,13 @@ build:
   skip: true  # [py<38]
   entry_points:
     - openllm = _openllm_tiny._entrypoint:cli
-    - openllm = openllm_cli.entrypoint:cli
-    - openllm-dive-bentos = openllm_cli.extension.dive_bentos:cli
-    - openllm-get-containerfile = openllm_cli.extension.get_containerfile:cli
-    - openllm-get-prompt = openllm_cli.extension.get_prompt:cli
-    - openllm-list-bentos = openllm_cli.extension.list_bentos:cli
-    - openllm-list-models = openllm_cli.extension.list_models:cli
-    - openllm-playground = openllm_cli.extension.playground:cli
+    #- openllm = openllm_cli.entrypoint:cli
+    #- openllm-dive-bentos = openllm_cli.extension.dive_bentos:cli
+    #- openllm-get-containerfile = openllm_cli.extension.get_containerfile:cli
+    #- openllm-get-prompt = openllm_cli.extension.get_prompt:cli
+    #- openllm-list-bentos = openllm_cli.extension.list_bentos:cli
+    #- openllm-list-models = openllm_cli.extension.list_models:cli
+    #- openllm-playground = openllm_cli.extension.playground:cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
@@ -59,16 +59,17 @@ test:
     - openllm
   commands:
     #- pip check
-# pip check Fauilures
-    #   pip-tools 7.4.1 has requirement build>=1.0.0, but you have build 0.10.0.
-    #   openllm 0.5.3 requires vllm, which is not installed.
-    #   openllm 0.5.3 has requirement build[virtualenv]<1, but you have build 1.2.1.
+# TODO pip check Fauilures
+   #  pip-tools 7.4.1 has requirement build>=1.0.0, but you have build 0.10.0.
+   #  openllm 0.5.3 requires vllm, which is not installed.
+   #  openllm 0.5.3 has requirement build[virtualenv]<1, but you have build 1.2.1.
     - openllm --help
-    - openllm-dive-bentos --help
-    - openllm-get-containerfile --help
-    - openllm-get-prompt --help
-    - openllm-list-bentos --help
-    - openllm-list-models --help
+# TODO openllm = openllm_cli.entrypoint:cli is removed
+    #- openllm-dive-bentos --help
+    #- openllm-get-containerfile --help
+    #- openllm-get-prompt --help
+    #- openllm-list-bentos --help
+    #- openllm-list-models --help
   requires:
     - pip
 
