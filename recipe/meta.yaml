@@ -53,7 +53,8 @@ requirements:
     - click >=8.1.3
     - cuda-python  # [not osx]
     - bitsandbytes <0.42
-
+#  TypeError: You have a type annotation 'dict[str, t.Any]' which makes use of newer typing features than are supported in your version of Python. To handle this error, you should either remove the use of new syntax or install the `eval_type_backport` package.
+    - eval_type_backport  # [py<39]
 test:
   imports:
     - openllm
