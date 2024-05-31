@@ -58,7 +58,11 @@ test:
   imports:
     - openllm
   commands:
-    - pip check # TODO openllm 0.5.3 requires vllm, which is not installed.
+    #- pip check
+# pip check Fauilures
+    #   pip-tools 7.4.1 has requirement build>=1.0.0, but you have build 0.10.0.
+    #   openllm 0.5.3 requires vllm, which is not installed.
+    #   openllm 0.5.3 has requirement build[virtualenv]<1, but you have build 1.2.1.
     - openllm --help
     - openllm-dive-bentos --help
     - openllm-get-containerfile --help
