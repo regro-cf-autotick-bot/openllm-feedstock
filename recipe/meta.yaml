@@ -47,7 +47,9 @@ requirements:
     - sentencepiece
     - scipy
     # pip-tools 7.4.1 has requirement build>=1.0.0, but you have build 0.10.0.
+    # openllm 0.5.3 has requirement build[virtualenv]<1, but you have build 1.2.1 # Refer https://github.com/pypa/build/blob/main/pyproject.toml#L77C4-L77C25
     - python-build >=1.0.0
+    - virtualenv >=20.0.35
     - click >=8.1.3
     - cuda-python
     - bitsandbytes <0.42
