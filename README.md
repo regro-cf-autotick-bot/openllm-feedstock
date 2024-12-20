@@ -48,10 +48,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
+              <td>linux_64_python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21519&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openllm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openllm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -190,7 +190,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/openllm-client](https://github.com/conda-forge/openllm-client/)
-* [@conda-forge/openllm-core](https://github.com/conda-forge/openllm-core/)
+* [@conda-forge/openllm-client](https://github.com/orgs/conda-forge/teams/openllm-client/)
+* [@conda-forge/openllm-core](https://github.com/orgs/conda-forge/teams/openllm-core/)
 * [@rxm7706](https://github.com/rxm7706/)
 
